@@ -1,6 +1,14 @@
 # GOD
 
-GOD is a local-first, Gemini-style assistant web app with safe automation presets.
+Local-first, Gemini-style AI assistant with grounded web Q&A, safe automation workflows, and portable USB-ready deployment.
+
+## Highlights
+
+- Multi-provider support: Gemini API, OpenAI-compatible endpoints, and Ollama local models
+- Grounded webpage Q&A flow with safer fallback behavior
+- Safety review queue and audit-friendly approval workflow
+- Mini, ultra-mini, and floating panel UI modes
+- Portable packaging for flash drive deployment
 
 ## LLM Connector
 
@@ -103,5 +111,3 @@ powershell -ExecutionPolicy Bypass -File .\run-portable.ps1
 Then open `http://localhost:4173`.
 
 > Note: the target machine must be able to reach your configured model endpoint (local service or network URL).
-=======
-# GOD
