@@ -103,3 +103,5 @@ powershell -ExecutionPolicy Bypass -File .\run-portable.ps1
 Then open `http://localhost:4173`.
 
 > Note: the target machine must be able to reach your configured model endpoint (local service or network URL).
+=======
+# GOD
