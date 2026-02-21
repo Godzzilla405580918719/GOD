@@ -1,0 +1,31 @@
+{
+  "name": "god",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:browser": "tsc -b && vite build",
+    "preview": "vite preview",
+    "portable": "npm run build && powershell -ExecutionPolicy Bypass -File ./scripts/make-portable.ps1",
+    "deploy:prepare": "npm run build:browser"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-legacy": "^5.4.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.8.2",
+    "vite": "^5.4.11"
+  },
+  "browserslist": [
+    "defaults",
+    "not dead",
+    "maintained node versions"
+  ]
+}
